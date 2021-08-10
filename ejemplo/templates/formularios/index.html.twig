@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello FormulariosController!{% endblock %}
+
+{% block body %}
+
+    <!-- Page Content -->
+    <div class="container">
+
+
+        <!-- Contact Form -->
+        <div class="row">
+            <div class="col-md-8">
+                <h3>ENVIAR MENSAJE</h3>
+
+                <form method="POST" action="/formulario-envio">
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Titulo Comentario:</label>
+                            <input type="text" class="form-control" name="titulocomentario" id="titulocomentario" required data-validation-required-message="Introduce el titulo del comentario.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                     
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Texto Comentario:</label>
+                            <textarea rows="10" cols="100" class="form-control" name="textocomentario" id="textocomentario" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                        </div>
+                    </div>
+                    <div id="success"></div>
+
+                    <!-- For success/fail messages -->
+                    <button type="submit" class="btn btn-primary">Enviar Formulario </button>
+                </form>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website {{ fechavista }}</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+{% endblock %}

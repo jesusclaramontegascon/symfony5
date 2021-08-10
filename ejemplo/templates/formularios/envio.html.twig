@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello FormulariosController parte de envio {% endblock %}
+
+{% block body %}
+
+
+ <!--#begin container -->
+ <div class="container">
+
+      <!--#begin row -->
+       <div class="row">
+
+            <!--#begin col-md-12 col-xs-12 col-lg-12 col-sm-12-->    
+            <div class="col-md-12 col-xs-12 col-lg-12 col-sm-12">     
+            <h1>Esto el envio</h1>
+
+                    {{ valor1 }}<br/>
+                    {{ valor2 }}<br/>
+            
+            </div>
+             <!--#end col-md-12 col-xs-12 col-lg-12 col-sm-12 -->
+
+        </div>
+       <!--#End row--> 
+
+
+         <!-- #Begin Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website {{ fechavista }}</p>
+                </div>
+            </div>
+        </footer>
+        <!--#End Footer -->
+ </div>
+ <!--#end container -->
+{% endblock %}

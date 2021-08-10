@@ -1,0 +1,32 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+index:
+    path: /
+    controller: App\Controller\InicioController::index
+
+anuncios:
+    path: /anuncios
+    controller: App\Controller\AnunciosController::index
+
+anunciosget:
+    path: /anuncios/{valor1}
+    controller: App\Controller\AnunciosController::valorpasado
+
+anunciosget2:
+    path: /anuncios2/{valor2}/{valor2b}
+    controller: App\Controller\AnunciosController::valorpasado2
+    defaults: { valor2: 'valor2', valor2b: 'valor2b'}
+
+anuncios3:
+    path: /anuncios3/{valor3}/{valor3b}
+    controller: App\Controller\AnunciosController::valorpasado3
+
+formularios:
+    path: /formularios
+    controller: App\Controller\FormulariosController::index
+
+formulariosenvio:
+    path: /formulario-envio
+    controller: App\Controller\FormulariosController::envio

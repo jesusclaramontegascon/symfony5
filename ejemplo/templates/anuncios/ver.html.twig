@@ -1,0 +1,52 @@
+{% extends 'baseabsoluta.html.twig' %}
+
+{% block title %}Pagina de AnunciosController{% endblock %}
+
+
+{% block body %}
+
+
+
+<body>
+<br/><br/><br/>
+<!-- Page Content -->
+    <div class="container" style="margin-top:1% !important">
+
+
+  -----For Anuncios2-----------------<br/>
+  {% for an2 in anuncios2 %}
+   {{ an2.tituloanuncio }}
+   <br/>
+   {% endfor %}
+  --Fin for anuncios2----------------------<br/>
+
+
+
+
+       
+        <hr>
+
+       <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 
+                       {{ fechavista }}
+                        </p>
+                       
+                </div>
+                    
+                    
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+
+
+
+</body>
+
+
+{% endblock %}
